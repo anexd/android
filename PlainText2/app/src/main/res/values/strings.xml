@@ -1,0 +1,8 @@
+<resources>
+    <string name="introducao">PlainText</string>
+    <string name="btn">ENTRAR</string>
+   <string name="checkbox">Salvar suas informações para seguir</string>
+    <string name="subtitulo">Digite suas credenciais para continuar</string>
+    <string name="login">Login: </string>
+    <string name="senha">Senha</string>
+</resources>
