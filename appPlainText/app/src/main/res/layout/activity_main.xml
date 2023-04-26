@@ -7,12 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    ;<TextView
         android:id="@+id/text"
+    android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:height="50dp"
-        android:text=" App PlantText"
+        android:background="@color/head"
+        android:text="@string/app_name"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
@@ -20,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -28,6 +30,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColorLink="@color/head"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.577"
@@ -36,21 +39,26 @@
 
     <Button
         android:id="@+id/button"
+        android:height="48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Entrar"
+        android:background="@color/head"
+        android:backgroundTint="#494343"
+        android:text="@string/botao"
+        android:textColor="@color/lay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
+
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text=" Salvar informação do Login"
+        android:text="@string/editcheckbox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
@@ -60,9 +68,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="84dp"
+        android:height="50dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="264dp" />
 
     <TextView
@@ -71,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:text="Login"
+        android:text="@string/textLogin"
         app:layout_constraintBottom_toBottomOf="@+id/editTextText"
         app:layout_constraintEnd_toStartOf="@+id/editTextText"
         app:layout_constraintHorizontal_bias="0.214"
@@ -83,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:text="Senha"
+        android:text="@string/textsenha"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
@@ -92,25 +103,29 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Digite suas credenciais para Continuar"
+        android:text="@string/textDigite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="204dp" />
+        tools:layout_editor_absoluteY="204dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="409dp"
-        android:layout_height="147dp"
+        android:layout_width="412dp"
+        android:layout_height="145dp"
+        android:background="@color/lay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="55dp">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="50dp">
 
         <TextView
             android:id="@+id/textView4"
+            android:textColor="@color/white"
             android:layout_width="134dp"
             android:layout_height="65dp"
-            android:text="&quot;The most secure  password manager&quot; Bob and Aline"
+            android:text="@string/textTitle2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.832"

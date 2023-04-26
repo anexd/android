@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">appPlainText</string>
+    <string name="app_name">PlainText</string>
+    <string name="botao">Entrar</string>
+    <string name="editcheckbox">Salvar informação do Login</string>
+    <string name="textsenha">Senha</string>
+    <string name="textLogin">Login</string>
+    <string name="textDigite">Digite suas credenciais para Continuar</string>
+    <string name="textTitle2">"&quot;The most secure  password manager&quot; Bob and Aline</string>
+
 </resources>
